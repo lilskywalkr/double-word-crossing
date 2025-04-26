@@ -23,7 +23,7 @@ int main() {
     }
 
     word2 = calloc(11, sizeof(char));
-    if (word1 == NULL) {
+    if (word2 == NULL) {
         free(word1);
         printf("Failed to allocate memory");
         return 8;
@@ -74,10 +74,6 @@ int main() {
         return 1;
     }
 
-    display(first_cross);
-    printf("\n");
-    display(second_cross);
-    printf("\n");
     display(result);
 
     free(word1);
@@ -87,6 +83,7 @@ int main() {
     destroy(first_cross);
     destroy(second_cross);
     destroy(result);
+
     return 0;
 }
 
